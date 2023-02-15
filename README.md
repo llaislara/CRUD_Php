@@ -1,3 +1,4 @@
+### Requisitos
 Construir um sistema em PHP capaz de realizar as operações abaixo:
 
 - Cadastrar uma Pessoa
@@ -15,5 +16,5 @@ Cada cadastro de Pessoa deve possuir as seguintes informações:
 
 As informações devem ser salvas em Banco de Dados MySQL.
 
-# Como rodar o projeto:
+### Como rodar o projeto:
 - Instalar o Xampp; 
