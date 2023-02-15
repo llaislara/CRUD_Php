@@ -31,7 +31,7 @@
             <div class="col-lg-12">
                 <form action="salvar.php" method="POST">
                     <input type="hidden" name="acao" value="cadastrar">
-
+                    <!-- agrupamento dos rótulos e controles do formulário --> 
                     <div class="form-group">
                         <label>nome</label>
                         <input type="text" name="nome" class="form-control">
