@@ -31,10 +31,12 @@
             <div class="col-lg-12">
                 <?php
                   include("config.php");
+                  // Seleciona na tabela pessoas uma pessoa através do id para ser alterada
                   $sql = "SELECT * FROM pessoas WHERE id=".$_REQUEST["id"];
                   $res = $conn->query($sql) or die($conn->error);
                   $row = $res->fetch_object();
                 ?>
+                
                 <form action="salvar.php" method="POST">
                     <input type="hidden" name="acao" value="editar">
                     <input type="hidden" name="id" value="<?php print $row->id; ?>">
