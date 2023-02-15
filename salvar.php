@@ -1,8 +1,10 @@
 <?php
 	include("config.php");
     var_dump($_REQUEST);
+	//Menu de opções 
 	switch ($_REQUEST["acao"]) {
 		case 'cadastrar':
+			//busca na tabela "pessoas" os campos desejados para realizar o cadastro
 			$sql = "INSERT INTO pessoas 
 						(nome, cpf, data_nascimento, rg, orgao_emissor)
 					VALUES
@@ -20,6 +22,7 @@
 			break;
 		
 		case 'editar':
+			//busca na tabela "pessoas" o ID selecionado para alterar os campos desejados de um cadastro
 			$sql = "UPDATE pessoas SET
 						nome='".$_POST["nome"]."',
 						cpf='".$_POST["cpf"]."',
@@ -42,6 +45,7 @@
 			break;
 
 		case 'excluir':
+			//busca na tabela "pessoas" o ID selecionado para excluir um cadastro
 			$sql = "DELETE FROM pessoas WHERE id=".$_REQUEST["id"];
 
 			$res = $conn->query($sql) or die($conn->error);
