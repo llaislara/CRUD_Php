@@ -18,3 +18,4 @@ As informações devem ser salvas em Banco de Dados MySQL.
 
 ### Como rodar o projeto:
 - Instalar o Xampp; 
+- Criar Base de Dados conforme o arquivo *bancodedados.sql*; 
