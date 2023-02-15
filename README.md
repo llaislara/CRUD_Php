@@ -19,3 +19,10 @@ As informações devem ser salvas em Banco de Dados MySQL.
 ### Como rodar o projeto:
 - Instalar o Xampp; 
 - Criar Base de Dados conforme o arquivo *bancodedados.sql*; 
+- Criar um formulário HTML com os campos para inserir os dados da pessoa; 
+- Criar um arquivo em PHP que recebe os dados enviados pelo formuláio e envia os dados para o serv; 
+- Criar um arquivo em PHP que recebe os dados enviados pelo formulário e insere um novo registro na tabela; 
+-Criar um formulário HTML com os campos preenchidos com os dados existentes; 
+- Processar os dados no servidor e atualizar o registro correspondente na tabela; 
+- Criar script em PHP que consulta o banco de dados e retorna o registo da tabela; 
+- Salvar as informações em um banco de dados MySQL phpmyadmin. 
