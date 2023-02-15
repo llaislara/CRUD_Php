@@ -14,3 +14,6 @@ Cada cadastro de Pessoa deve possuir as seguintes informações:
 - Órgão Emissor do RG
 
 As informações devem ser salvas em Banco de Dados MySQL.
+
+# Como rodar o projeto:
+- Instalar o Xampp; 
