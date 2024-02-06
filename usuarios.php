@@ -10,28 +10,30 @@ include("config.php");
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-    <title>Cadastro do Usuário</title>
+    <title>Employee Registration</title>
+    <!-- Link para o arquivo style.css -->
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.php">Cadastro</a>
+            <a class="nav-link" href="index.php" style=" color: white;">Register</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="usuarios.php">Lista de Pessoas</a>
+            <a class="nav-link" href="usuarios.php" style=" color: white;" >Registered Members</a>
           </li>
         </ul>
       </div>
     </nav>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
+        <div class="rowEdit">
+            <div class="col-lg-12" style="margin-top: 5vh">
             <?php
                     //include("config.php");
                     $sql = "SELECT * FROM pessoas";
@@ -59,8 +61,8 @@ include("config.php");
                         print "<td>".$row->rg."</td>";
                         print "<td>".$row->orgao_emissor."</td>";
                         print "<td>
-                                 <button class='btn btn-success' onclick=\"location.href='editar.php?id=".$row->id."';\">Editar</button>
-                                 <button class='btn btn-danger' onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='salvar.php?acao=excluir&id=".$row->id."';}else{false;}\">Excluir</button>
+                                 <button class='btn btn-success' style='margin-left: 0px' onclick=\"location.href='editar.php?id=".$row->id."';\">Editar</button>
+                                 <button class='btn btn-danger' style='margin-left: 0px'  onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='salvar.php?acao=excluir&id=".$row->id."';}else{false;}\">Excluir</button>
                                </td>";
                         print "</tr>";
                       }
